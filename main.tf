@@ -21,7 +21,7 @@ resource "aws_iam_role" "ms-cluster" {
             "Principal": {
                 "Service": "eks.amazonaws.com"
             }, 
-            "Action": "stst:AssumeRole"
+            "Action": "sts:AssumeRole"
         }
     ]
 }
@@ -88,7 +88,7 @@ resource "aws_iam_role" "ms-node" {
             "Principal": {
                 "Service": "ec2.amazonaws.com"
             }, 
-            "Action": "stst:AssumeRole"
+            "Action": "sts:AssumeRole"
         }
     ]
 }
