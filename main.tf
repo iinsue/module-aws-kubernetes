@@ -130,7 +130,7 @@ resource "aws_eks_node_group" "ms-node-group" {
   depends_on = [
     aws_iam_role_policy_attachment.ms-node-AmazonEKSWorkerNodePolicy,
     aws_iam_role_policy_attachment.ms-node-AmazonEKS_CNI_Policy,
-    aws_iam_role_policy_attachment.ms-node-AmazonEC2ContainerRegistryPolicy
+    aws_iam_role_policy_attachment.ms-node-AmazonEC2ContainerRegistryReadOnly
   ]
 }
 
